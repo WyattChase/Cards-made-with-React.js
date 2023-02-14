@@ -1,5 +1,5 @@
 import React from "react";
-
+import Card from "./component/Card.jsx";
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
@@ -14,11 +14,15 @@ const Home = () => {
 			<a href="#" className="btn btn-success">
 				If you see this green button... bootstrap is working...
 			</a>
+			{element}
 			<p>
 				Made by{" "}
 				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
 				love!
 			</p>
+			<Card name="Florida" description="warm, Sunny, Hurricanes" location="SE USA"/>
+			<Card name="Colorado" description="warm, Sunny, Hurricanes" location="SE USA"/>
+			<Card name="Florida" description="warm, Sunny, Hurricanes" location="SE USA"/>
 		</div>
 	);
 };

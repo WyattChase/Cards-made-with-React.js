@@ -5,6 +5,36 @@ import { Navbar } from "./Navbar.jsx";
 
 
 //create your first component
+const cardArray = [
+	{
+		name: "Florida",
+		location: "Warm, Sunny, Hurricanes",
+		description :"SE USA",
+		image : "https://www.history.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkzMTcwMzU4OTEwNTkyNjcx/gettyimages-643977867.jpg",
+		link : "#"
+	},
+	{
+		name: "Georgia",
+		location: "Swampy, Bugs, Hillbillies",
+		description :"SE USA",
+		image : "https://www.history.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkzMTcwMzU4OTEwNTkyNjcx/gettyimages-643977867.jpg",
+		link : "#"
+	},
+	{
+		name: "New York",
+		location: "Musty, Rat Infested, Windy",
+		description :"NE USA",
+		image : "https://www.history.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkzMTcwMzU4OTEwNTkyNjcx/gettyimages-643977867.jpg",
+		link : "#"
+	}
+	
+
+]
+
+
+
+
+
 const Home = () => {
 	return (
 		<><div><Navbar /></div><div className="container-fluid">
@@ -13,11 +43,17 @@ const Home = () => {
 				<Jumbotron />
 			</div>
 
-			<div id="card" className="container text-center">
-				<Card name="Florida" description="warm, Sunny, Hurricanes" location="SE USA" />
-				<Card name="Colorado" description="warm, Sunny, Hurricanes" location="SE USA" />
-				<Card name="Atlanta" description="warm, Sunny, Hurricanes" location="SE USA" />
-				<Card name="Atlanta" description="warm, Sunny, Hurricanes" location="SE USA" />
+			<div id="card" className="container">
+				<div className="row">
+					{cardArray.map((element, index) => {
+						return (
+							<div className="col-3" key={index}>
+								<Card image={element.image} name={element.name} description={element.description} location={element.location} link={element.link} />
+							</div>
+						)
+					})}
+				</div>
+				
 			</div>
 		</div></>
 	);

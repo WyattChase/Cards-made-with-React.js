@@ -8,7 +8,7 @@ const Card = (props) => {
     <div className="card" style={{width: '18rem'}}>
       <img
         className="card-img-top"
-        src="https://www.history.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkzMTcwMzU4OTEwNTkyNjcx/gettyimages-643977867.jpg"
+        src={props.image} width={250} height={250}
         alt=""
       ></img>
       <div className="card-body">

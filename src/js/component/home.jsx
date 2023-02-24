@@ -15,16 +15,23 @@ const cardArray = [
 	},
 	{
 		name: "Georgia",
-		location: "Swampy, Bugs, Hillbillies",
+		location: "Swampy, Skating Rink, Hillbillies",
 		description :"SE USA",
-		image : "https://www.history.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkzMTcwMzU4OTEwNTkyNjcx/gettyimages-643977867.jpg",
+		image : "https://www.wildfrontierstravel.com/media/cache/page_image_large/upload/mirror/www-wildfrontierstravel-com/83b08925_Tbilisi-dreamstime_m_95312132.jpeg",
 		link : "#"
 	},
 	{
 		name: "New York",
-		location: "Musty, Rat Infested, Windy",
+		location: "Never Sleeps, Liberty Statue, Windy",
 		description :"NE USA",
-		image : "https://www.history.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkzMTcwMzU4OTEwNTkyNjcx/gettyimages-643977867.jpg",
+		image : "https://lp-cms-production.imgix.net/2020-11/shutterstockRF_1564421236.jpg?auto=format&q=75&w=3840",
+		link : "#"
+	},
+	{
+		name: "California",
+		location: "Surfs Up, Earthquakes, Never Rains",
+		description :"SW USA",
+		image : "https://visitoceanside.org/wp-content/uploads/2016/06/Hollywood-Sign.jpg",
 		link : "#"
 	}
 	
